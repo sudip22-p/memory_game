@@ -22,7 +22,7 @@ window.onload=function(){
     let boxes=document.getElementsByClassName("box");
     setTimeout(()=>{
         for(let i=0;i<boxes.length;i++){
-            boxes[i].classList.add("white");
+            boxes[i].classList.add("transparent");
             boxes[i].addEventListener("click",clickEmoji);
         }
     },4000);
