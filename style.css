@@ -95,15 +95,18 @@ div#board{
 /* for responsive page */
 
 @media (max-width:969px) {
+    
     .game-wrapper{
         margin-top: 12px;
         padding: 10px;
         padding-bottom: 3px;
     }
+    
     div#board{
         height: 450px;
         width: 535px;
     }
+    
     .btn{
         margin-top: 25px;
         margin-bottom: 12px;
@@ -113,6 +116,7 @@ div#board{
         border-radius: 15px;
         box-shadow: 0 7px #817f75;
     }
+    
     .box{
         height: 70px;
         width: 80px;
@@ -120,22 +124,27 @@ div#board{
         font-size: 55px;
         margin-top: 8px;
     }
+    
     h1{
         font-size:26px;
     }
+    
 }
 
 
 @media (max-width:669px) {
+    
     .game-wrapper{
         margin-top: 12px;
         padding: 10px;
         padding-bottom: 3px;
     }
+    
     div#board{
         height: 400px;
         width: 470px;
     }
+    
     .btn{
         margin-top: 15px;
         margin-bottom: 12px;
@@ -145,6 +154,7 @@ div#board{
         border-radius: 12px;
         box-shadow: 0 6px #817f75;
     }
+    
     .box{
         height: 60px;
         width: 70px;
@@ -152,22 +162,27 @@ div#board{
         font-size: 48px;
         margin-top: 8px;
     }
+    
     h1{
         font-size:25px;
     }
+    
 }
 
 
 @media (max-width:545px) {
+    
     .game-wrapper{
         margin-top: 12px;
         padding: 10px;
         padding-bottom: 3px;
     }
+    
     div#board{
         height: 400px;
         width: 410px;
     }
+    
     .btn{
         margin-top: 15px;
         margin-bottom: 12px;
@@ -177,6 +192,7 @@ div#board{
         border-radius: 8px;
         box-shadow: 0 6px #817f75;
     }
+    
     .box{
         height: 60px;
         width: 60px;
@@ -184,22 +200,27 @@ div#board{
         font-size: 44px;
         margin-top: 8px;
     }
+    
     h1{
         font-size:24px;
     }
+    
 }
 
 
 @media (max-width:469px) {
+    
     .game-wrapper{
         margin-top: 12px;
         padding: 10px;
         padding-bottom: 3px;
     }
+    
     div#board{
         height: 400px;
         width: 350px;
     }
+    
     .btn{
         margin-top: 15px;
         margin-bottom: 12px;
@@ -209,29 +230,36 @@ div#board{
         border-radius: 8px;
         box-shadow: 0 5px #817f75;
     }
+    
     .box{
         height: 60px;
         width: 50px;
         margin-left: 8px;
-        font-size: 38px;
+        font-size: 38
+        px;
         margin-top: 8px;
     }
+    
     h1{
         font-size:21px;
     }
+    
 }
 
 
 @media (max-width:410px) {
+    
     .game-wrapper{
         margin-top: 12px;
         padding: 10px;
         padding-bottom: 10px;
     }
+    
     div#board{
         height: 370px;
         width: 290px;
     }
+    
     .btn{
         margin-top: 15px;
         margin-bottom: 15px;
@@ -241,6 +269,7 @@ div#board{
         border-radius: 8px;
         box-shadow: 0 5px #817f75;
     }
+    
     .box{
         height: 50px;
         width: 40px;
@@ -248,22 +277,27 @@ div#board{
         font-size: 34px;
         margin-top: 8px;
     }
+    
     h1{
         font-size:20px;
     }
+    
 }
 
 
 @media (max-width:332px) {
+    
     .game-wrapper{
         margin-top: 15px;
         padding: 10px;
         padding-bottom: 15px;
     }
+    
     div#board{
         height: 320px;
         width: 270px;
     }
+    
     .btn{
         margin-top: 15px;
         margin-bottom: 15px;
@@ -273,6 +307,7 @@ div#board{
         border-radius: 8px;
         box-shadow: 0 5px #817f75;
     }
+    
     .box{
         height: 40px;
         width: 36px;
@@ -280,9 +315,11 @@ div#board{
         font-size: 30px;
         margin-top: 8px;
     }
+    
     h1{
         font-size:18px;
     }
+    
 }
 
 
