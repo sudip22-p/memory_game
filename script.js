@@ -1,5 +1,7 @@
 const rows=6;
 const cols=6;
+
+
 const emojis = [
     '\u{1F604}', '\u{2B50}', '\u{1F44D}', '\u{1F680}', '\u{1F602}', 
     '\u{1F622}', '\u{1F44E}', '\u{1F609}', '\u{1F431}', '\u{1F436}', 
@@ -13,12 +15,22 @@ const emojis = [
     '\u{1F389}', '\u{1F451}', '\u{1F9D1}', '\u{1F3E0}', '\u{1F4B8}'
   ];
 let selectedEmojis=[];
+
+
 window.onload=function(){
+
+
     const intervalValid=setInterval(()=>{
         victoryCheck(intervalValid);
     },100);
+
+
     getRandomEmojiSet();
+
+
     constructBoxes();
+
+
     let boxes=document.getElementsByClassName("box");
     setTimeout(()=>{
         for(let i=0;i<boxes.length;i++){
@@ -26,6 +38,8 @@ window.onload=function(){
             boxes[i].addEventListener("click",clickEmoji);
         }
     },4000);
+
+
 }
 
 function victoryCheck(i){
@@ -40,10 +54,13 @@ function victoryCheck(i){
             boxes[i].style.backgroundColor="gold";
             boxes[i].textContent="you win!!";
         }
+
         setTimeout(()=>{
             victorySound.pause();
         },3005);
+
         clearInterval(i);
+
     }
 }
 
@@ -72,11 +89,14 @@ function clickEmoji(){
     if(!yes.pause()){
         yes.pause();
     }
+
     const no=document.getElementById("no");
     if(!no.pause()){
         no.pause();
     }
+
     checkMatched();
+
 }
 
 
@@ -85,20 +105,24 @@ function checkMatched(){
     if(openBoxes.length>1){
         if(openBoxes[0].textContent==openBoxes[1].textContent){//if matched
             document.getElementById("yes").play();
+
             setTimeout(()=>{
                 openBoxes[0].classList.add("matchedBox");
                 openBoxes[1].classList.add("matchedBox");
                 openBoxes[1].classList.remove("openBox");
                 openBoxes[0].classList.remove("openBox");
             },500);
+
         }else{//if not matched
             document.getElementById("no").play();
+
             setTimeout(()=>{
                 openBoxes[0].addEventListener("click",clickEmoji);
                 openBoxes[1].addEventListener("click",clickEmoji);
                 openBoxes[1].classList.remove("openBox");
                 openBoxes[0].classList.remove("openBox");
             },500);
+
         }
     }
 }
@@ -118,9 +142,11 @@ function getRandomEmojiSet(){
             selectedEmojis.push(selectedEmoji);
             selectedEmojis.push(selectedEmoji);
         }
+
     const shuffledEmojis = selectedEmojis.slice();
     shuffleArray(shuffledEmojis);
     selectedEmojis=shuffledEmojis;
+    
 }
 
 
