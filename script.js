@@ -14,32 +14,41 @@ const emojis = [
   ];
 let selectedEmojis=[];
 window.onload=function(){
-    setInterval(victoryCheck,100);
+    const intervalValid=setInterval(()=>{
+        victoryCheck(intervalValid);
+    },100);
     getRandomEmojiSet();
-    startGame();
+    constructBoxes();
     let boxes=document.getElementsByClassName("box");
     setTimeout(()=>{
         for(let i=0;i<boxes.length;i++){
             boxes[i].classList.add("white");
+            boxes[i].addEventListener("click",clickEmoji);
         }
-    },3000);
+    },4000);
 }
 
-function victoryCheck(){
+function victoryCheck(i){
     let matchedBoxes=document.getElementsByClassName("matchedBox");
     if(matchedBoxes.length==36){
+        const victorySound = document.getElementById("victorySound");
+        victorySound.play();
         let boxes=document.getElementsByClassName("box");
         for(let i=0;i<boxes.length;i++){
             boxes[i].style.fontSize="16px";
             boxes[i].style.color="green";
             boxes[i].style.backgroundColor="gold";
-            boxes[i].textContent="victory";
+            boxes[i].textContent="you win!!";
         }
+        setTimeout(()=>{
+            victorySound.pause();
+        },3005);
+        clearInterval(i);
     }
 }
 
 
-function startGame(){
+function constructBoxes(){
     let emojiIndex=0;
     for(let r=0;r<rows;r++){
         for(let c=0;c<cols;c++){
@@ -49,7 +58,7 @@ function startGame(){
             newBox.textContent=getEmoji(emojiIndex);
             emojiIndex+=1;
             document.getElementById("board").append(newBox);
-            newBox.addEventListener("click",clickEmoji);
+            // newBox.addEventListener("click",clickEmoji);//---from onload intervaled call to prevent click on preshow 
         }
     }
 }
@@ -58,7 +67,16 @@ function startGame(){
 function clickEmoji(){
     this.classList.add("openBox");
     this.removeEventListener("click",clickEmoji);
-    setTimeout(checkMatched,700);
+
+    const yes=document.getElementById("yes");
+    if(!yes.pause()){
+        yes.pause();
+    }
+    const no=document.getElementById("no");
+    if(!no.pause()){
+        no.pause();
+    }
+    checkMatched();
 }
 
 
@@ -66,15 +84,21 @@ function checkMatched(){
     let openBoxes=document.getElementsByClassName("openBox");
     if(openBoxes.length>1){
         if(openBoxes[0].textContent==openBoxes[1].textContent){//if matched
-            openBoxes[0].classList.add("matchedBox");
-            openBoxes[1].classList.add("matchedBox");
-            openBoxes[1].classList.remove("openBox");
-            openBoxes[0].classList.remove("openBox");
+            document.getElementById("yes").play();
+            setTimeout(()=>{
+                openBoxes[0].classList.add("matchedBox");
+                openBoxes[1].classList.add("matchedBox");
+                openBoxes[1].classList.remove("openBox");
+                openBoxes[0].classList.remove("openBox");
+            },500);
         }else{//if not matched
-            openBoxes[0].addEventListener("click",clickEmoji);
-            openBoxes[1].addEventListener("click",clickEmoji);
-            openBoxes[1].classList.remove("openBox");
-            openBoxes[0].classList.remove("openBox");
+            document.getElementById("no").play();
+            setTimeout(()=>{
+                openBoxes[0].addEventListener("click",clickEmoji);
+                openBoxes[1].addEventListener("click",clickEmoji);
+                openBoxes[1].classList.remove("openBox");
+                openBoxes[0].classList.remove("openBox");
+            },500);
         }
     }
 }
