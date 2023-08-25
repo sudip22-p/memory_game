@@ -13,6 +13,7 @@ body{
 .game-wrapper{
     margin-top: 8px;
     padding: 10px;
+    padding-bottom: 3px;
     background-color: #063b0a;
 }
 h1{
@@ -53,6 +54,9 @@ div#board{
     transition: 1.5s;
     transform: scale(1.05);
 }
+.box:active{
+    box-shadow: 0 3px #817f75;
+}
 .box{
     height: 80px;
     width: 90px;
@@ -74,4 +78,275 @@ div#board{
 .matchedBox{
     background-color: white;
     color: white;
+}
+/* for responsive page */
+@media (max-width:969px) {
+    .game-wrapper{
+        margin-top: 12px;
+        padding: 10px;
+        padding-bottom: 3px;
+    }
+    div#board{
+        height: 450px;
+        width: 535px;
+    }
+    .btn{
+        margin-top: 25px;
+        margin-bottom: 12px;
+        padding: 5px 5px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 15px;
+        box-shadow: 0 7px #817f75;
+    }
+    .box{
+        height: 70px;
+        width: 80px;
+        margin-left: 8px;
+        font-size: 55px;
+        margin-top: 8px;
+    }
+    h1{
+        font-size:26px;
+    }
+}
+@media (max-width:669px) {
+    .game-wrapper{
+        margin-top: 12px;
+        padding: 10px;
+        padding-bottom: 3px;
+    }
+    div#board{
+        height: 400px;
+        width: 470px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 12px;
+        padding: 5px 5px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 12px;
+        box-shadow: 0 6px #817f75;
+    }
+    .box{
+        height: 60px;
+        width: 70px;
+        margin-left: 8px;
+        font-size: 50px;
+        margin-top: 8px;
+    }
+    h1{
+        font-size:25px;
+    }
+}
+@media (max-width:545px) {
+    .game-wrapper{
+        margin-top: 12px;
+        padding: 10px;
+        padding-bottom: 3px;
+    }
+    div#board{
+        height: 400px;
+        width: 410px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 12px;
+        padding: 5px 5px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 6px #817f75;
+    }
+    .box{
+        height: 60px;
+        width: 60px;
+        margin-left: 8px;
+        font-size: 50px;
+        margin-top: 8px;
+    }
+    h1{
+        font-size:24px;
+    }
+}
+@media (max-width:469px) {
+    .game-wrapper{
+        margin-top: 12px;
+        padding: 10px;
+        padding-bottom: 3px;
+    }
+    div#board{
+        height: 400px;
+        width: 350px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 12px;
+        padding: 3px 3px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 5px #817f75;
+    }
+    .box{
+        height: 60px;
+        width: 50px;
+        margin-left: 8px;
+        font-size: 50px;
+        margin-top: 8px;
+    }
+    h1{
+        font-size:21px;
+    }
+}
+@media (max-width:410px) {
+    .game-wrapper{
+        margin-top: 12px;
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+    div#board{
+        height: 370px;
+        width: 290px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 3px 3px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 5px #817f75;
+    }
+    .box{
+        height: 50px;
+        width: 40px;
+        margin-left: 6px;
+        font-size: 50px;
+        margin-top: 8px;
+    }
+    h1{
+        font-size:20px;
+    }
+}
+@media (max-width:332px) {
+    .game-wrapper{
+        margin-top: 15px;
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+    div#board{
+        height: 320px;
+        width: 270px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 3px 3px;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 5px #817f75;
+    }
+    .box{
+        height: 40px;
+        width: 36px;
+        margin-left: 6px;
+        font-size: 50px;
+        margin-top: 8px;
+    }
+    h1{
+        font-size:18px;
+    }
+}
+@media (max-width:299px) {
+    .game-wrapper{
+        margin-top: 15px;
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+    div#board{
+        height: 320px;
+        width: 242px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 3px 3px;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 5px #817f75;
+    }
+    .box{
+        height: 40px;
+        width: 32px;
+        margin-left: 5px;
+        font-size: 50px;
+        margin-top: 8px;
+    }
+    h1{
+        font-size:16px;
+    }
+}
+@media (max-width:271px) {
+    .game-wrapper{
+        margin-top: 15px;
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+    div#board{
+        height: 300px;
+        width: 210px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 3px 3px;
+        font-size: 9px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 5px #817f75;
+    }
+    .box{
+        height: 40px;
+        width: 30px;
+        margin-left: 4px;
+        font-size: 50px;
+        margin-top: 7px;
+    }
+    h1{
+        font-size:15px;
+    }
+}
+@media (max-width:235px) {
+    .game-wrapper{
+        margin-top: 15px;
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+    div#board{
+        height: 240px;
+        width: 170px;
+    }
+    .btn{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 1px 1px;
+        font-size: 9px;
+        font-weight: 100;
+        border-radius: 6px;
+        box-shadow: 0 4px #817f75;
+    }
+    .box{
+        height: 30px;
+        width: 24px;
+        margin-left: 3px;
+        font-size: 50px;
+        margin-top: 5px;
+    }
+    h1{
+        font-size:13px;
+    }
 }
