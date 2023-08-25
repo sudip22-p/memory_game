@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     text-align: center;
     display: flex;
@@ -10,17 +11,20 @@ body{
     flex-direction: column;
     background-color: #89cb24;
 }
+
 .game-wrapper{
     margin-top: 8px;
     padding: 10px;
     padding-bottom: 3px;
     background-color: #063b0a;
 }
+
 h1{
     margin-bottom: 8px;
     color: #dfd3d3;
     text-decoration: underline greenyellow;
 }
+
 div#board{
     cursor: pointer;
     height: 510px;
@@ -30,6 +34,7 @@ div#board{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .btn{
     margin-top: 33px;
     margin-bottom: 15px;
@@ -47,6 +52,7 @@ div#board{
     border-radius: 15px;
     box-shadow: 0 9px #817f75;
 }
+
 .btn:hover{
     color: rgb(209, 218, 42);
     background-color: red;
@@ -54,9 +60,11 @@ div#board{
     transition: 1.5s;
     transform: scale(1.05);
 }
+
 .box:active{
     box-shadow: 0 3px #817f75;
 }
+
 .box{
     height: 80px;
     width: 90px;
@@ -68,18 +76,24 @@ div#board{
     align-items: center;
     justify-content: center;
 }
+
 .transparent{
     color: transparent;
 }
+
 .openBox{
     background-color: white;
     color: white;
 }
+
 .matchedBox{
     background-color: white;
     color: white;
 }
+
+
 /* for responsive page */
+
 @media (max-width:969px) {
     .game-wrapper{
         margin-top: 12px;
@@ -110,6 +124,8 @@ div#board{
         font-size:26px;
     }
 }
+
+
 @media (max-width:669px) {
     .game-wrapper{
         margin-top: 12px;
@@ -140,6 +156,8 @@ div#board{
         font-size:25px;
     }
 }
+
+
 @media (max-width:545px) {
     .game-wrapper{
         margin-top: 12px;
@@ -170,6 +188,8 @@ div#board{
         font-size:24px;
     }
 }
+
+
 @media (max-width:469px) {
     .game-wrapper{
         margin-top: 12px;
@@ -200,6 +220,8 @@ div#board{
         font-size:21px;
     }
 }
+
+
 @media (max-width:410px) {
     .game-wrapper{
         margin-top: 12px;
@@ -230,6 +252,8 @@ div#board{
         font-size:20px;
     }
 }
+
+
 @media (max-width:332px) {
     .game-wrapper{
         margin-top: 15px;
@@ -260,6 +284,8 @@ div#board{
         font-size:18px;
     }
 }
+
+
 @media (max-width:299px) {
     .game-wrapper{
         margin-top: 15px;
@@ -290,6 +316,8 @@ div#board{
         font-size:16px;
     }
 }
+
+
 @media (max-width:271px) {
     .game-wrapper{
         margin-top: 15px;
@@ -320,6 +348,8 @@ div#board{
         font-size:15px;
     }
 }
+
+
 @media (max-width:235px) {
     .game-wrapper{
         margin-top: 15px;
