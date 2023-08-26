@@ -124,7 +124,7 @@ div#board{
         height: 70px;
         width: 80px;
         margin-left: 8px;
-        font-size: 55px;
+        font-size: 48px;
         margin-top: 8px;
     }
 
@@ -162,7 +162,7 @@ div#board{
         height: 60px;
         width: 70px;
         margin-left: 8px;
-        font-size: 48px;
+        font-size: 42px;
         margin-top: 8px;
     }
 
@@ -200,7 +200,7 @@ div#board{
         height: 60px;
         width: 60px;
         margin-left: 8px;
-        font-size: 44px;
+        font-size: 36px;
         margin-top: 8px;
     }
 
@@ -238,8 +238,7 @@ div#board{
         height: 60px;
         width: 50px;
         margin-left: 8px;
-        font-size: 38
-        px;
+        font-size: 30px;
         margin-top: 8px;
     }
 
@@ -277,7 +276,7 @@ div#board{
         height: 50px;
         width: 40px;
         margin-left: 6px;
-        font-size: 34px;
+        font-size: 26px;
         margin-top: 8px;
     }
 
@@ -315,7 +314,7 @@ div#board{
         height: 40px;
         width: 36px;
         margin-left: 6px;
-        font-size: 30px;
+        font-size: 24px;
         margin-top: 8px;
     }
 
@@ -353,7 +352,7 @@ div#board{
         height: 40px;
         width: 32px;
         margin-left: 5px;
-        font-size: 26px;
+        font-size: 20px;
         margin-top: 8px;
     }
     
@@ -391,7 +390,7 @@ div#board{
         height: 40px;
         width: 30px;
         margin-left: 4px;
-        font-size: 24px;
+        font-size: 18px;
         margin-top: 7px;
     }
     
@@ -429,7 +428,7 @@ div#board{
         height: 30px;
         width: 24px;
         margin-left: 3px;
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 5px;
     }
     
