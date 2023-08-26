@@ -26,6 +26,7 @@ h1{
 }
 
 div#board{
+    user-select: none;
     cursor: pointer;
     height: 510px;
     width: 630px;
@@ -83,6 +84,8 @@ div#board{
 
 .openBox{
     background-color: white;
+    transform: rotateY(360deg);
+    transition: 0.1s;
     color: white;
 }
 
