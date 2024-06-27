@@ -63,6 +63,7 @@ div#board{
 
 .btn{
     cursor: pointer;
+    user-select: none;
     background:    #de3f13;
     border-radius: 7px;
     padding:       7px 12px;
@@ -75,10 +76,6 @@ div#board{
 .btn:hover{
     transition: 0.7s;
     background:    #fe4310;
-}
-
-.box:active{
-    box-shadow: 0 3px #817f75;/*to change*/
 }
 
 .box{
@@ -222,6 +219,12 @@ div#board{
     h1{
         font-size: 24px;
         left: 0px;
+    }
+    .openBox{
+        transition: none;
+    }
+    .btn:hover{
+        transition: none;
     }
 }
 @media only screen and (max-width: 518px) {

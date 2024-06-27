@@ -182,16 +182,13 @@ function getEmoji(index){
 
 
 function getRandomEmojiSet(){
-    let number=rows*cols;
+    let number=rows*cols/2;
     while (selectedEmojis.length < number) {
         const randomIndex = Math.floor(Math.random() * emojis.length);
         const selectedEmoji = emojis[randomIndex];
             selectedEmojis.push(selectedEmoji);
-            selectedEmojis.push(selectedEmoji);
-            selectedEmojis.push(selectedEmoji);
-            selectedEmojis.push(selectedEmoji);
         }
-
+    selectedEmojis=selectedEmojis.concat(selectedEmojis);
     const shuffledEmojis = selectedEmojis.slice();
     shuffleArray(shuffledEmojis);
     selectedEmojis=shuffledEmojis;
