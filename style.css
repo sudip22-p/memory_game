@@ -46,7 +46,6 @@ h1{
     color: #000000;
 }
 div#board{
-    user-select: none;
     cursor: pointer;
     height: 90vh;
     border-radius: 3px;
@@ -88,6 +87,7 @@ div#board{
     font-size: 50px;
     height: 10vw;
     width: 8vw;
+    user-select: none;
 }
 
 .transparent{
@@ -219,12 +219,6 @@ div#board{
     h1{
         font-size: 24px;
         left: 0px;
-    }
-    .openBox{
-        transition: none;
-    }
-    .btn:hover{
-        transition: none;
     }
 }
 @media only screen and (max-width: 518px) {
