@@ -73,8 +73,7 @@ window.onload=function(){
 
 function victoryCheck(i){
     let matchedBoxes=document.getElementsByClassName("matchedBox");
-    if(matchedBoxes.length==2){
-    // if(matchedBoxes.length==rows*cols){
+    if(matchedBoxes.length==rows*cols){
         clearInterval(timerInterval); // Stop the timer
         const victorySound = document.getElementById("victorySound");
         victorySound.play();
