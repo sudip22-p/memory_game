@@ -20,6 +20,7 @@ let timeString;
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
+
 // Function to start the timer
 function startTimer() {
     let timerInterval = setInterval(() => {

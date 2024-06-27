@@ -250,7 +250,6 @@ div#board{
     }
     .box{
         height: 9vh;
-        width: 22vw;
         font-size: 18px;
     }
 }

@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory Game</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon">
-</head>
-<body>
-    <div id="victory">
-    </div>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="victory"></div>
     <div class="game-wrapper">
-        <h1 id="title">Memory Game</h1>
-        <div class="top-wrapper">
-            <div id="msg-wrapper">
-                <div id="msg"></div>
-                <div class="btn" id="reset">Reset Game</div>
-                 <div id="timer">0:00:00</div>
-            </div>
+      <h1 id="title">Memory Game</h1>
+      <div class="top-wrapper">
+        <div id="msg-wrapper">
+          <div id="msg"></div>
+          <div class="btn" id="reset">Reset Game</div>
+          <div id="timer">0:00:00</div>
         </div>
-        <div id="board"></div>
-        <audio id="victorySound" src="./assets/immediate.mp3"></audio>
-        <audio id="yes" src="./assets/matchedSound.mp3"></audio>
-        <audio id="no" src="./assets/notMatched.mp3"></audio>
+      </div>
+      <div id="board"></div>
+      <audio id="victorySound" src="./assets/immediate.mp3"></audio>
+      <audio id="yes" src="./assets/matchedSound.mp3"></audio>
+      <audio id="no" src="./assets/notMatched.mp3"></audio>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
