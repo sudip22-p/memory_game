@@ -20,6 +20,7 @@ body{
     justify-content: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 
 h1{
@@ -135,54 +136,121 @@ div#board{
     color: rgb(10, 223, 10);
 }
 .victory-emoji {
-    font-size: 4rem; /* adjust size as needed */
+    font-size: 4rem;
 }
 
 /* for responsive page */
 
-@media only screen and (max-width: 768px) {
-    .game-wrapper {
-        padding: 10px;
+@media only screen and (max-width: 968px) {
+    h1{
+        font-size: 30px;
+        margin-left: 50px;
+        position: absolute;
+        top: 10px;
     }
-
-    h1 {
-        font-size: 1.5rem;
+    .game-wrapper{
+        height: 90vh;
+        width: 100vw;
     }
-
-    #board {
-        height: 50vh;
-        max-height: none;
+    .top-wrapper{
+        position: relative;
+        gap: 10px;
+        padding: 10px 10px;
     }
-
-    .box {
+    #msg-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: row-reverse;
+        width: 100vw;
+        gap: 10px;
+    }
+    #timer{
+        font-size: 24px;
+    }
+    div#board{
+        height: 90vh;
+        width: 97vw;
+        gap: 7px;
+        padding: 7px 0px;
+        box-shadow: 0px 0px 5px 0px #000000;
+    }
+    
+    .btn{
+        border-radius: 7px;
+        padding:       7px 12px;
+        font:          normal 21px/1 "Open Sans", sans-serif;
+    }
+    .box{
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px 0px #000000;
+        font-size: 40px;
         height: 15vw;
+        width: 9vw;
+    }
+    #msg{
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    .victory-emoji {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 903px) {
+    div#board{
+        gap: 5px;
+    }
+    .btn{
+        border-radius: 7px;
+        padding:       5px 9px;
+        font:          normal 18px/1 "Open Sans", sans-serif;
+    }
+    .box{
+        height: 18vh;
         width: 12vw;
-        font-size: 2rem;
     }
-
-    #msg {
-        font-size: 1rem;
+    #msg{
+        font-size: 18px;
     }
-
-    .btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
+    #timer{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 748px) {
+    
+    h1{
+        font-size: 24px;
+        left: 0px;
+    }
+}
+@media only screen and (max-width: 518px) {
+    .box{
+        height: 19vh;
+        width: 12vw;
+        font-size: 28px;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.2rem;
+@media only screen and (max-width: 424px) {
+    .box{
+        height: 10vh;
+        width: 22vw;
+        font-size: 21px;
     }
-
-    .box {
-        height: 20vw;
-        width: 16vw;
-        font-size: 1.5rem;
+    h1{
+        font-size: 18px;
+        top: 15px;
     }
-
-    .btn {
-        padding: 6px 12px;
-        font-size: 0.8rem;
+}
+@media only screen and (max-width: 378px) {
+    h1{
+        position: relative;
+        font-size: 30px;
+        margin: 0px;
+    }
+    .box{
+        height: 9vh;
+        width: 22vw;
+        font-size: 18px;
     }
 }

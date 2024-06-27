@@ -97,11 +97,13 @@ function victoryCheck(i){
         victorymsg.innerHTML="Congratulations!!! <br> Matched all the emojis in  <div class='green'>"+timeText+"</div>";
         msgWrapper.style.position="fixed";
         msgWrapper.style.top="20vh";
-        msgWrapper.style.left="25vw";
+        msgWrapper.style.left="10vw";
         msgWrapper.style.backgroundColor="#ffffff";
         msgWrapper.style.height="20vh";
-        msgWrapper.style.width="50vw";
+        msgWrapper.style.width="80vw";
         msgWrapper.style.padding="120px 0px";
+        msgWrapper.style.flexDirection="column";
+        msgWrapper.style.justifyContent="center";
         setTimeout(()=>{
             victorySound.pause();
         },3005);
